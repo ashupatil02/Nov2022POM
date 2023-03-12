@@ -13,33 +13,37 @@ import com.qa.opencart.pages.LoginPage;
 import com.qa.opencart.pages.ProductInfoPage;
 import com.qa.opencart.pages.RegisterPage;
 import com.qa.opencart.pages.SearchPage;
-//import com.qa.opencart.pages.LoginPage;
+import com.qa.opencart.pages.LoginPage;
+import com.qa.opencart.pages.ViewCartPopUpPage;
 
 public class BaseTest {
 	DriverFactory df;
-	WebDriver driver ;
-	 protected Properties prop;
-    protected LoginPage loginPage;
-    protected AccountsPage accPage;
-    protected SearchPage searchPage;
-    protected ProductInfoPage productInfoPage;
-    protected SoftAssert softAssert;
-    protected RegisterPage registerPage;
+	WebDriver driver;
+	protected Properties prop;
+	protected LoginPage loginPage;
+	protected AccountsPage accPage;
+	protected SearchPage searchPage;
+	protected ProductInfoPage productInfoPage;
+	protected ViewCartPopUpPage viewCartPopUpPage;
+	protected RegisterPage registerPage;
+
+	
+	protected SoftAssert softAssert;
+	
 	
 	@BeforeTest
-	public void setUp() {
+	public void setup() {
 		df = new DriverFactory();
 		prop = df.initProp();
 		driver = df.initDriver(prop);
 		loginPage = new LoginPage(driver);
 		softAssert = new SoftAssert();
-		
-	//	AccountsPage = new AccountsPage(driver);
-		
-		
+
 	}
+
 	@AfterTest
 	public void tearDown() {
 		driver.quit();
 	}
+
 }
