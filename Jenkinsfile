@@ -12,7 +12,7 @@ pipeline
         {
             steps
             {
-                 git 'https://github.com/ashupatil02/Nov2022POM.git'
+                 git 'https://github.com/jglick/simple-maven-project-with-tests.git'
                  bat "mvn -Dmaven.test.failure.ignore=true clean package"
             }
             post 
