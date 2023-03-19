@@ -13,7 +13,7 @@ pipeline
             steps
             {
                  git 'https://github.com/ashupatil02/Nov2022POM.git'
-                 bat "mvn -Dmaven.test.failure.ignore=true clean package"
+                 bat "mvn -Dmaven.test.failure.ignore=true clean install"
             }
             post 
             {
