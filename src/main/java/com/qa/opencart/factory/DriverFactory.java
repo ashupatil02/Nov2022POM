@@ -61,7 +61,7 @@ public class DriverFactory {
 					
 		}
 		else {
-			System.out.println("plz pass the right browsername...." + browserName);
+			System.out.println("plz pass  right browsername...." + browserName);
 		}
 		
 		getDriver().manage().deleteAllCookies();
