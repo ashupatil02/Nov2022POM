@@ -20,7 +20,7 @@ public class OptionManager {
 		co = new ChromeOptions();
 		co.addArguments("--remote-allow-origins=*");
 		if(Boolean.parseBoolean(prop.getProperty("headless").trim())) {
-			System.out.println("------running chrome in headless--------");
+			System.out.println("------running chrome in a headless mode--------");
 			co.addArguments("--headless");
 		}
 		if(Boolean.parseBoolean(prop.getProperty("incognito").trim()))co.addArguments("--incognito");
