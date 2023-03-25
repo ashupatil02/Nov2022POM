@@ -18,7 +18,7 @@ public class SearchPage {
 	
 	public int getSearchProductsCount() {
 		int productsCount =  eleUtil.waitForElementsVisible(searchProductsReasults, AppConstants.DEFAULT_MEDIUM_TIME_OUT).size();
-		System.out.println("product count:::" +productsCount);
+		System.out.println("product count:" +productsCount);
 		return productsCount;
 	}
 
