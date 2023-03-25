@@ -38,7 +38,7 @@ public class LoginPage {
 	@Step("....getting the login page url.....")
 	public String getLoginPageURL() {
 		String url = eleUtil.waitForURLContainsAndFetch(AppConstants.DEFAULT_SHORT_TIME_OUT, AppConstants.LOGIN_PAGE_URL_FRACTION_VALUE );
-		System.out.println("Login page url: " + url);
+		System.out.println("Login page url is: " + url);
 		return url;
 	}
 
