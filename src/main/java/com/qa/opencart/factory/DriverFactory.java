@@ -40,7 +40,7 @@ public class DriverFactory {
 		String browserName = prop.getProperty("browser").toLowerCase().trim();
 		
 		
-		System.out.println("browser name is : " + browserName);
+		System.out.println("browser name is the : " + browserName);
 		
 		if(browserName.equalsIgnoreCase("chrome")) {
 			tlDriver.set(new ChromeDriver(optionManager.getChromeOptions()));
