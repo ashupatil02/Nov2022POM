@@ -25,7 +25,7 @@ import com.qa.opencart.exception.FrameworkException;
 public class DriverFactory {
 	public WebDriver driver;
 	public Properties prop;
-	public OptionManager optionManager;
+	public OptionsManager optionManager;
 
 	public static String highlight;
 
@@ -39,7 +39,7 @@ public class DriverFactory {
 	 */
 	public WebDriver initDriver(Properties prop) {
 
-		optionManager = new OptionManager(prop);
+		optionManager = new OptionsManager(prop);
 
 		highlight = prop.getProperty("highlight").trim();
 		String browserName = prop.getProperty("browser").toLowerCase().trim();
